@@ -12,25 +12,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="ToSimple">
     <meta name="renderer" content="webkit">
-    <meta name="copyright" content="John Doe">
+    <meta name="copyright" content="ToSimple">
     
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
     <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2023/02/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="有点东西啊~">
+<meta property="og:url" content="http://tosimple.cn/archives/2023/02/index.html">
+<meta property="og:site_name" content="有点东西啊~">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="ToSimple">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
     
-    <title>fi3ework&#39;s Studio</title>
+    <title>ToSimple</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -241,7 +241,7 @@
         </span>
         <!-- back to home page text -->
         <span class="home-link header-element">
-            <a href=/>fi3ework's Studio.</a>
+            <a href=/>ToSimple 的博客</a>
         </span>
     </div>
     <!-- toggle banner for post layout -->
@@ -428,41 +428,14 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2023/02/21/404/">
+            <a class="abstract-title" href="/2023/02/21/Gson%E5%B0%86Map%E8%BD%ACJson%20String/">
                 
-                <span class="abstract-title-text">[404]</span>
+                <span class="abstract-title-text">使用Gson将Map转Json String</span>
             </a>
             <div class="abstract-content">
-                
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2023/02/21">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2023/02/21</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2023/02/21/android-IDE/">
-                
-                <span class="abstract-title-text">You have JVM property “https.proxyHost“ set to “127.0.0.1“ 警告问题解决</span>
-            </a>
-            <div class="abstract-content">
-                Mac 上使用 Android Studio 下载 sdk 时，发现一直下载不了，于是进入 Android Studio 的 Preferences 里面设置 http 代理，下载完成后，取消代理。这时，在顶部会有一个警告提示：
-问题排查1、从提示来看，说是设置了 JVM 的 https.proxyHost 属性，可我在工程里查看，并没有设置这个属性。
-2、网上搜了一下，大部分搜索结果都导向这篇 stackoverflow 的文章 How to remove JVM property “https.proxyHost”?这篇文章点赞数最多的，就是教你在命令行执行这条命令，JAVA_OPT...
+                有时跟服务端通信时，需要将一个 Map 对象，以 json string 的形式传递到服务端。如果一个一个的拼接，显的有点麻烦，使用 Gson 可以方便的解决。
+示例: 将 Map 转为 json string1.创建 Map 并初始化
+1234Map&lt;String, String&gt; params = new HashMap&lt;&gt;();params.put(&quot;key1&quot;, &quot;value1&quot;);params.put(&quot;key2&quot;, &quot;value2&quot;);params.put(&quot;ke...
             </div>
             <!-- read more -->
             
@@ -476,7 +449,7 @@
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="Android IDE">Android IDE</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="Java">Java</a>
     
 </div>
 
@@ -529,14 +502,14 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2023/02/21/Gson%E5%B0%86Map%E8%BD%ACJson%20String/">
+            <a class="abstract-title" href="/2023/02/21/android-IDE/">
                 
-                <span class="abstract-title-text">使用Gson将Map转Json String</span>
+                <span class="abstract-title-text">You have JVM property “https.proxyHost“ set to “127.0.0.1“ 警告问题解决</span>
             </a>
             <div class="abstract-content">
-                有时跟服务端通信时，需要将一个 Map 对象，以 json string 的形式传递到服务端。如果一个一个的拼接，显的有点麻烦，使用 Gson 可以方便的解决。
-示例: 将 Map 转为 json string1.创建 Map 并初始化
-1234Map&lt;String, String&gt; params = new HashMap&lt;&gt;();params.put(&quot;key1&quot;, &quot;value1&quot;);params.put(&quot;key2&quot;, &quot;value2&quot;);params.put(&quot;ke...
+                Mac 上使用 Android Studio 下载 sdk 时，发现一直下载不了，于是进入 Android Studio 的 Preferences 里面设置 http 代理，下载完成后，取消代理。这时，在顶部会有一个警告提示：
+问题排查1、从提示来看，说是设置了 JVM 的 https.proxyHost 属性，可我在工程里查看，并没有设置这个属性。
+2、网上搜了一下，大部分搜索结果都导向这篇 stackoverflow 的文章 How to remove JVM property “https.proxyHost”?这篇文章点赞数最多的，就是教你在命令行执行这条命令，JAVA_OPT...
             </div>
             <!-- read more -->
             
@@ -550,7 +523,7 @@
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="Java">Java</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="Android IDE">Android IDE</a>
     
 </div>
 
@@ -574,7 +547,7 @@
     
         
             
-                <a href="mailto:12345@qq.com" class="iconfont-archer email" title=email ></a>
+                <a href="mailto:qch2023@gmail.com" class="iconfont-archer email" title=email ></a>
             
         
     
@@ -677,18 +650,7 @@
         
         
         
-        
-        
-        
-        
-        
     
-        
-        
-        
-        
-        
-        
         
         
         
@@ -699,7 +661,7 @@
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 4
+        Total : 3
         </div>
         <!-- search  -->
         
@@ -716,13 +678,7 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">02/21</span>
-            <a class="archive-post-title" href="/2023/02/21/404/">[404]</a>
-        </li>
-    
-        
-        <li class="archive-post-item">
-            <span class="archive-post-date">02/21</span>
-            <a class="archive-post-title" href="/2023/02/21/android-IDE/">You have JVM property “https.proxyHost“ set to “127.0.0.1“ 警告问题解决</a>
+            <a class="archive-post-title" href="/2023/02/21/Gson%E5%B0%86Map%E8%BD%ACJson%20String/">使用Gson将Map转Json String</a>
         </li>
     
         
@@ -734,7 +690,7 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">02/21</span>
-            <a class="archive-post-title" href="/2023/02/21/Gson%E5%B0%86Map%E8%BD%ACJson%20String/">使用Gson将Map转Json String</a>
+            <a class="archive-post-title" href="/2023/02/21/android-IDE/">You have JVM property “https.proxyHost“ set to “127.0.0.1“ 警告问题解决</a>
         </li>
     
     </div>
@@ -743,9 +699,9 @@
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
         
-            <span class="sidebar-tag-name" data-tags="Android IDE">
+            <span class="sidebar-tag-name" data-tags="Java">
                 <span class="iconfont-archer">&#xe606;</span>
-                Android IDE
+                Java
             </span>
         
             <span class="sidebar-tag-name" data-tags="IDE">
@@ -753,9 +709,9 @@
                 IDE
             </span>
         
-            <span class="sidebar-tag-name" data-tags="Java">
+            <span class="sidebar-tag-name" data-tags="Android IDE">
                 <span class="iconfont-archer">&#xe606;</span>
-                Java
+                Android IDE
             </span>
         
     </div>
@@ -784,9 +740,9 @@
         siteMetaRoot = '/'
     }
     var siteMeta = {
-        url: "http://example.com",
+        url: "http://tosimple.cn",
         root: siteMetaRoot,
-        author: "John Doe"
+        author: "ToSimple"
     }
 </script>
 
